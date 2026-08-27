@@ -82,8 +82,9 @@ function Profile() {
 
           <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
             <button
+              type="button"
               onClick={() => setView("feedback")}
-              className="flex w-full items-center gap-3 px-4 py-4 text-left transition-colors hover:bg-accent/40 active:bg-accent"
+              className="flex w-full cursor-pointer items-center gap-3 px-4 py-4 text-left transition-colors hover:bg-accent/40 active:bg-accent"
             >
               <MessageSquareHeart className="h-5 w-5 shrink-0 text-primary" />
               <span className="min-w-0 flex-1 truncate text-sm font-medium text-foreground">Feedback</span>
@@ -91,8 +92,9 @@ function Profile() {
             </button>
 
             <button
+              type="button"
               onClick={() => setView("contact")}
-              className="flex w-full items-center gap-3 border-t border-border px-4 py-4 text-left transition-colors hover:bg-accent/40 active:bg-accent"
+              className="flex w-full cursor-pointer items-center gap-3 border-t border-border px-4 py-4 text-left transition-colors hover:bg-accent/40 active:bg-accent"
             >
               <Headphones className="h-5 w-5 shrink-0 text-primary" />
               <span className="min-w-0 flex-1 truncate text-sm font-medium text-foreground">Contact us</span>
@@ -100,8 +102,9 @@ function Profile() {
             </button>
 
             <button
+              type="button"
               onClick={() => setView("privacy")}
-              className="flex w-full items-center gap-3 border-t border-border px-4 py-4 text-left transition-colors hover:bg-accent/40 active:bg-accent"
+              className="flex w-full cursor-pointer items-center gap-3 border-t border-border px-4 py-4 text-left transition-colors hover:bg-accent/40 active:bg-accent"
             >
               <ShieldCheck className="h-5 w-5 shrink-0 text-primary" />
               <span className="min-w-0 flex-1 truncate text-sm font-medium text-foreground">Privacy Policy</span>
@@ -116,9 +119,10 @@ function Profile() {
         <div className="animate-in fade-in duration-200">
           <header className="relative flex items-center justify-between pb-4">
             <button
+              type="button"
               onClick={() => setView("menu")}
               aria-label="Quay lại"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-card text-foreground transition-colors hover:bg-accent active:scale-95"
+              className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-card text-foreground transition-colors hover:bg-accent active:scale-95"
             >
               <ChevronLeft className="h-6 w-6" />
             </button>
@@ -136,8 +140,9 @@ function Profile() {
                 Phản hồi của bạn đã được ghi nhận và gửi đến ban quản trị để cải thiện ứng dụng.
               </p>
               <button
+                type="button"
                 onClick={resetFeedbackForm}
-                className="mt-6 inline-flex items-center justify-center rounded-full bg-primary px-6 py-2.5 text-xs font-semibold text-primary-foreground shadow-md transition-all hover:bg-primary/90 active:scale-95"
+                className="mt-6 inline-flex cursor-pointer items-center justify-center rounded-full bg-primary px-6 py-2.5 text-xs font-semibold text-primary-foreground shadow-md transition-all hover:bg-primary/90 active:scale-95"
               >
                 Quay lại Hồ sơ
               </button>
@@ -176,7 +181,7 @@ function Profile() {
 
               <button
                 type="submit"
-                className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-primary py-3.5 text-sm font-semibold text-primary-foreground shadow-md transition-all active:scale-[0.98] hover:bg-primary/90"
+                className="mt-4 flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-primary py-3.5 text-sm font-semibold text-primary-foreground shadow-md transition-all active:scale-[0.98] hover:bg-primary/90"
               >
                 <Send className="h-4 w-4" />
                 Gửi phản hồi
@@ -191,9 +196,10 @@ function Profile() {
         <div className="animate-in fade-in duration-200">
           <header className="relative flex items-center justify-between pb-4">
             <button
+              type="button"
               onClick={() => setView("menu")}
               aria-label="Quay lại"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-card text-foreground transition-colors hover:bg-accent active:scale-95"
+              className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-card text-foreground transition-colors hover:bg-accent active:scale-95"
             >
               <ChevronLeft className="h-6 w-6" />
             </button>
@@ -230,8 +236,9 @@ function Profile() {
               </div>
 
               <button
+                type="button"
                 onClick={handleCopyEmail}
-                className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-primary/20 py-2.5 text-xs font-semibold text-primary transition-all hover:bg-primary/30 active:scale-95"
+                className="mt-4 flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-primary/20 py-2.5 text-xs font-semibold text-primary transition-all hover:bg-primary/30 active:scale-95"
               >
                 {copied ? (
                   <>
@@ -264,9 +271,10 @@ function Profile() {
         <div className="animate-in fade-in duration-200">
           <header className="relative flex items-center justify-between pb-4">
             <button
+              type="button"
               onClick={() => setView("menu")}
               aria-label="Quay lại"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-card text-foreground transition-colors hover:bg-accent active:scale-95"
+              className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-card text-foreground transition-colors hover:bg-accent active:scale-95"
             >
               <ChevronLeft className="h-6 w-6" />
             </button>
